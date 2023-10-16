@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+@font-face {
+    font-family: 'HakgyoansimWoojuR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+}
+
+label {
+    font-family: 'HakgyoansimWoojuR';
+}
+
+.box {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.box2 {
+    margin-top: 22px;
+    text-align: center;
+}
+
+.loginBox {
+    padding: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 450px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 8px 5px rgb(182, 182, 182);
+}
+
+.Title {
+    margin-top: 180px;
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 95px;
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.startBtn {
+    font-family: 'HakgyoansimWoojuR';
+    font-size: 18px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: white;
+    background-color: #3c3c3c;
+    padding: 5px;
+}
+
+.startBtn:hover {
+    color: white;
+    background-color: #737373;
+}
+
+.loginBtn {
+    font-family: 'HakgyoansimWoojuR';
+    font-size: 18px;
+    width: 410px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: white;
+    background-color: #3c3c3c;
+    padding: 5px;
+}
+
+.loginBtn:hover {
+    color: white;
+    background-color: #737373;
+}
+
+.SingInInput {
+    width: 380px;
+    height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    font-family: 'NanumSquareNeo-Variable';
+    border: 1px solid #a6a6a6;
+}
+
+.IconBadge {
+    position: relative;
+    cursor: pointer;
+}
+.IconBadge:hover {
+    color : #3c3c3c;
+}
+
+/* BookMark */
+header {
+    display: block;
+}
+
+nav {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    display: block;
+}
+
+section {
+    display: inline-block;
+    float: left;
+    padding: 10px 20px 10px 20px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.logout {
+    font-family: 'HakgyoansimWoojuR';
+    font-weight: bold;
+    color : rgb(0, 0, 0)
+}
+.logout:hover {
+    cursor: pointer;
+    color : #3c3c3c;
+}
+
+.BookMark_EX {
+    font-family: 'HakgyoansimWoojuR';
+    font-size: 20px;
+}
+
+.BM_Box {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 8px 3px rgb(182, 182, 182);
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.BM_Title {
+    font-family: 'HakgyoansimWoojuR';
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+}
+
+.BM_Ex {
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 18px;
+}
+
+/* DropDown */
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+    font-family: 'NanumSquareNeo-Variable';
+    padding: 2px 2px 2px 12px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    color : black;
+}
+
+select:hover{
+    border: 2px solid rgb(108, 108, 108);
+    cursor: pointer;
+}
+
+optgroup {
+    font-family: 'HakgyoansimWoojuR';
+    font-size: 16px;
+}
+
+option {
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 13px;
+}
