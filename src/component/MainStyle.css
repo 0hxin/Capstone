@@ -16,6 +16,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'intelone-mono-font-family-regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     background-color: white;
 }
@@ -103,11 +110,12 @@ label {
     position: relative;
     cursor: pointer;
 }
+
 .IconBadge:hover {
-    color : #3c3c3c;
+    color: #3c3c3c;
 }
 
-/* BookMark */
+/* Main */
 header {
     display: block;
 }
@@ -119,7 +127,102 @@ nav {
 }
 
 section {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+/* 코드입력창 */
+.CodeMirror {
+    text-align: left;
+    border: 1px solid #ccc;
+    height: 320px;
+    margin: 0px 10px 0px 10px;
+    flex: 1;
+    /* float: left;
+    margin-left: 10px;
+    width: 68%;
+    height: 320px;
+    background-color: #a6a6a6; */
+    /* width: inherit;
+    height: 300px; */
+}
+
+/* 입력, 출력하는 곳 */
+.CodeSide {
+    padding: 0px 20px 0px 20px;
+    margin-right: 10px;
+    width: 30%;
+    height: 320px;
+    border-radius: 20px;
+    background-color: black;
+    align-items: center;
+}
+
+.WhiteLabel {
+    margin: 20px 0px 10px 0px;
+    font-family: 'HakgyoansimWoojuR';
+    font-size: 20px;
+    color : white;
+    text-align: left;
+}
+
+.InputText {
+    resize: none;
+    font-family: 'NanumSquareNeo-Variable';
+    width: 100%;
+    height: 70px;
+}
+.OutputText {
+    resize: none;
+    font-family: 'NanumSquareNeo-Variable';
+    width: 100%;
+    height: 120px;
+}
+
+/* Main 화면 버튼 정렬 */
+.DPArrange {
+    clear: both;
+}
+
+.ComBtn {
+    background-color: black;
+    color: white;
+    font-family: 'HakgyoansimWoojuR';
+    font-size: 18px;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.ComBtn:hover {
+    background-color: #3c3c3c;
+    color: white;
+    cursor: pointer;
+}
+
+.SaveBtn {
+    position: relative;
+    top: 3px;
+    background-color: white;
+    color: black;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.SaveBtn:hover {
+    background-color: #e3e3e3;
+    color: black;
+    cursor: pointer;
+}
+
+/* BookMark */
+.BMsection {
+    display: block;
     float: left;
     padding: 10px 20px 10px 20px;
     flex-flow: row nowrap;
@@ -130,11 +233,12 @@ section {
 .logout {
     font-family: 'HakgyoansimWoojuR';
     font-weight: bold;
-    color : rgb(0, 0, 0)
+    color: rgb(0, 0, 0)
 }
+
 .logout:hover {
     cursor: pointer;
-    color : #3c3c3c;
+    color: #3c3c3c;
 }
 
 .BookMark_EX {
@@ -172,7 +276,6 @@ select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    margin-left: 20px;
     width: 150px;
     height: 40px;
     font-family: 'NanumSquareNeo-Variable';
@@ -180,10 +283,10 @@ select {
     border: 2px solid black;
     border-radius: 15px;
     background-color: white;
-    color : black;
+    color: black;
 }
 
-select:hover{
+select:hover {
     border: 2px solid rgb(108, 108, 108);
     cursor: pointer;
 }
