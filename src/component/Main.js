@@ -61,6 +61,10 @@ function Main(props) {
                     <textarea type='text' class='OutputText'/>
                 </div>
             </section>
+            <footer>
+                <div class='ChatGPT'>
+                </div>
+            </footer>
         </div>
     )
 }
