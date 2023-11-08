@@ -278,6 +278,11 @@ footer {
     border: 1px solid black;
     border-radius: 20px;
 }
+.BM_Box:hover{
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5;
+}
 
 .BM_Title {
     font-family: 'HakgyoansimWoojuR';
@@ -319,4 +324,69 @@ optgroup {
 option {
     font-family: 'NanumSquareNeo-Variable';
     font-size: 13px;
+}
+
+/* BookMark - 저장한 목록 클릭 시 */
+.SaveContent{
+    flex: 1;
+    justify-content: center;
+    background-color: #3c3c3c;
+    margin: 15px 15px 0px 15px;
+    width: 100%;
+    height: 505px;
+    border-radius: 20px;
+    text-align: left;
+    padding: 15px 20px 10px 20px;
+}
+
+.Language{
+    background-color: white;
+    color: black;
+    font-family: 'HakgyoansimWoojuR';
+    font-size: 17px;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.SaveTitle{
+    color: white;
+    font-size: 25px;
+    margin: 5px 0px 15px 0px;
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+.SaveHistory{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px 10px 15px 10px;
+    color: white;
+    margin: 5px 0px 10px 0px;
+    font-family: 'HakgyoansimWoojuR';
+}
+
+.SaveTime {
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+
+.SaveChat{
+    font-size: 18px;
+}
+
+.SaveDebug{
+    padding: 5px 7px 5px 7px;
+    float: right;
+    margin-right: 5px;
+    font-size: 20px;
+    top: 3px;
+    border: 1px solid white;
+    background-color: #3c3c3c;
+    color: white;
+    border-radius: 20px;
+}
+.SaveDebug:hover{
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5;
 }

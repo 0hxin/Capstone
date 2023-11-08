@@ -45,6 +45,124 @@
     font-family: 'NanumSquareNeo-Variable';
 }
 
+.BMModalBody {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 60%;
+    padding: 30px 0px 30px 0px;
+    max-width: 100%;
+    max-height: 90%;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+.ModalBox {
+    display: inline-block;
+    width: 21%;
+    height: 150px;
+    margin: 10px 20px 10px 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.ModalBox:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5;
+}
+
+.BMTitle {
+    float: left;
+    margin : 0px 0px 20px 20px;
+    font-size: 30px;
+    color : rgb(0, 0, 0);
+}
+
+.BMIcon {
+    float: right;
+    margin : 0px 20px 0px 0px;
+    font-size: 30px;
+    color: #2d2d2d;
+    position: relative;
+}
+.BMIcon :hover {
+    cursor: pointer;
+    color: rgb(100, 100, 100);
+}
+
+.BMHr {
+    margin: 0px 0px 15px 0px;
+    border: 0px;
+    background-color: rgb(56, 56, 56);
+    height: 1px;
+}
+
+.BMPlus {
+    margin : 50% 0% 50% 0%;
+    font-size: 30px;
+    color: #2d2d2d;
+}
+
+.BMComment {
+    float: left;
+    font-size: 18px;
+    margin: 0px 0px 10px 20px;
+}
+.BMInput {
+    text-align: left;
+    float: left;
+    margin: 0px 20px 30px 20px;
+    width: 540px;
+    height: 30px;
+    padding : 10px 10px 1px 10px;
+    font-size: 15px;
+    font-family: 'NanumSquareNeo-Variable';
+    border: 1px solid #a6a6a6;
+    resize: none;
+}
+
+.BMBtn_save {
+    margin: 0px 20px 0px 0px;
+    position: relative;
+    top : 3px;
+    background-color: white;
+    color: black;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.BMBtn_save:hover{
+    background-color: #e3e3e3;
+    color: black;
+    cursor: pointer;
+}
+
+.BMBtn_back{
+    margin: 0px 10px 0px 0px;
+    background-color: black;
+    height: 43px;
+    color: white;
+    font-family: 'HakgyoansimWoojuR';
+    font-size: 18px;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.BMBtn_back:hover{
+    background-color: #3c3c3c;
+    color: white;
+    cursor: pointer;
+}
+
 label {
     font-family: 'HakgyoansimWoojuR';
 }
@@ -123,4 +241,21 @@ label {
     background-color: #efefefc6;
     color: black;
     cursor: pointer;
+}
+
+/* EXFileModal */
+.Timelabel{
+    text-align: left;
+    margin: 10px 15px 10px 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'HakgyoansimWoojuR';
+}
+.EXlabel{
+    text-align: left;
+    margin: 10px 15px 10px 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'HakgyoansimWoojuR';
 }

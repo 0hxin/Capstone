@@ -8,6 +8,7 @@ import { cpp } from '@codemirror/lang-cpp';
 import { python } from '@codemirror/lang-python';
 import { java } from '@codemirror/lang-java';
 import {EditorView} from "@codemirror/view";
+import BMModal from './BMModal';
 
 function Main(props) {
     const location = useLocation();
@@ -17,6 +18,16 @@ function Main(props) {
     const navigate = useNavigate();
     function PageMove() {
         navigate('/BookMark', { state: { userId: userId } });
+    }
+
+    const [isModalOpen, setModalIsOpen] = useState(false);
+    const [isModaluserId, setModaluserId] = useState("");
+    function openModal() {
+        setModalIsOpen(true);
+        setModaluserId(userId);
+    }
+    function closeModal() {
+        setModalIsOpen(false);
     }
 
     return (
@@ -36,7 +47,7 @@ function Main(props) {
                     <button class='ComBtn'>
                         컴파일
                     </button>
-                    <button class='SaveBtn'>
+                    <button class='SaveBtn' onClick={openModal}>
                         <CiSaveDown2 size='25px' />
                     </button>
                 </div>
@@ -65,6 +76,7 @@ function Main(props) {
                 <div class='ChatGPT'>
                 </div>
             </footer>
+            <BMModal isOpen={isModalOpen} isuserId = {isModaluserId} isClose={closeModal}></BMModal>
         </div>
     )
 }

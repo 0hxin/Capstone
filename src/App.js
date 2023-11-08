@@ -7,6 +7,7 @@ import LoginPage from './component/SingIn';
 import SingUpPage from './component/SingUp';
 import MainPage from './component/Main';
 import BookMark from './component/BookMark';
+import SaveFile from './component/SaveFile';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/SingUp' element={<SingUpPage/>}></Route>
           <Route path = '/Fazy_Compile' element={<MainPage/>}></Route>
           <Route path='/BookMark' element={<BookMark/>}></Route>
+          <Route path='/SaveFile' element={<SaveFile/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
